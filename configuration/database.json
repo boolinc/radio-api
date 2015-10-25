@@ -1,0 +1,18 @@
+{
+
+    "development": {
+        "host": "db.gentebool.com",
+        "database": "radio_dev"
+    },
+
+    "test": {
+        "host": "db.gentebool.com",
+        "database": "radio_test"
+    },
+
+    "production": {
+        "host": "db.gentebool.com",
+        "database": "radio_prod"
+    }
+
+}

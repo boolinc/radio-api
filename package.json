@@ -1,0 +1,35 @@
+{
+  "name": "radio-api",
+  "version": "0.0.1",
+  "description": "An API for a mini radio station",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive test"
+  },
+  "keywords": [
+    "radio",
+    "api",
+    "bool.js",
+    "gentebool"
+  ],
+  "author": "Pablo Andrés Dorado Suárez <pandres95@gentebool.com> (http://www.gentebool.com/radio)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boolinc/radio-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boolinc/radio-api/issues"
+  },
+  "homepage": "https://github.com/boolinc/radio-api#readme",
+  "dependencies": {
+    "booljs-mongoose": "^0.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0",
+    "supertest-as-promised": "^2.0.2"
+  }
+}
