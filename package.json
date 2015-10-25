@@ -4,6 +4,7 @@
   "description": "An API for a mini radio station",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "NODE_ENV=test mocha --recursive test"
   },
   "keywords": [
