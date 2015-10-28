@@ -1,9 +1,11 @@
 'use strict';
 
-module.exports = function () { /* global q */
+module.exports = function (app) {
+
+    var program = new app.models.Program();
 
     this.list = function () {
-        return q.resolve([]);
+        return program.list();
     };
 
 };
