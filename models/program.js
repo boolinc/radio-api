@@ -13,8 +13,7 @@ module.exports = function (app, Schema) {
             required: true
         },
         description: {
-            type: String,
-            required: true
+            type: String
         },
         hosts: [
             { type: String, ref: 'User' }
