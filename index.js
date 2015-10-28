@@ -5,4 +5,7 @@ var booljs = require('bool.js');
 booljs('com.gentebool.radio', [ 'booljs-mongoose' ])
     .setServerLoader('booljs-express')
     .setDatabaseLoader('booljs-mongoose')
-    .run();
+    .run()
+    .catch(function (err) {
+        /*global log*/log.error(err);
+    });
