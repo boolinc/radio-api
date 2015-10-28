@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (app, Schema) {
-    /* global q */ var Q = q;
+    var crud = new app.plugins.MongooseCrud();
 
     var programSchema = new Schema({
         _id: {
@@ -17,14 +17,11 @@ module.exports = function (app, Schema) {
             required: true
         },
         hosts: [
-            { type: String, ref: 'Host' }
+            { type: String, ref: 'User' }
         ]
     });
 
-    programSchema.statics.list = function () {
-        return Q.nbind(this.find, this)();
-    };
-
+    programSchema.plugin(crud);
     return programSchema;
 
 };
