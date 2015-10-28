@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/boolinc/radio-api#readme",
   "dependencies": {
+    "bool.js": "^0.3.4",
     "booljs-mongoose": "^0.1.0"
   },
   "devDependencies": {
