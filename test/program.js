@@ -28,6 +28,10 @@ describe('Programs', function () {
             });
         });
 
+        it('Find newly created program by id', () => {
+            return db.findById('tripping');
+        });
+
         it('Programs list should contain one element', () => {
             return expect(db.list()).to.eventually.have.length(1);
         });
@@ -42,6 +46,10 @@ describe('Programs', function () {
                 _id: 'tripping',
                 name: 'The Midnight Tripping Show'
             });
+        });
+
+        it('Find newly created program by id', () => {
+            return dao.findById('tripping');
         });
     });
 
@@ -66,6 +74,13 @@ describe('Programs', function () {
                     name: 'The Midnight Tripping Show'
                 })
                 .expect(400)
+            );
+        });
+
+        it('Find newly created program by id', () => {
+            return (agent
+                .get('/api/programs/tripping')
+                .expect(200)
             );
         });
     });
