@@ -3,7 +3,7 @@
 module.exports = function (app) {
     /* global q */ var Q = q;
 
-    return function (variables, data) {
+    return (variables, data) => {
         var unmetVariables = [];
 
         for(var index in variables){
@@ -11,12 +11,13 @@ module.exports = function (app) {
                 unmetVariables.push(variables[index]);
         }
 
-        if(unmetVariables.lenght > 0){
+        if(unmetVariables.length > 0){
             return Q.reject(new app.Error(
                 400, 'missing_parameters',
                 `You've already missed some parameters: ${unmetVariables}`
             ));
         }
+
         return Q.resolve();
     };
 
