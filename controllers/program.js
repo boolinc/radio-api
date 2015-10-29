@@ -1,4 +1,3 @@
-/* jshint esnext:true */
 'use strict';
 
 module.exports = function (app) {
@@ -8,6 +7,14 @@ module.exports = function (app) {
 
     this.list = function (req, res, next) {
         json.promise(program.list(), res, next);
+    };
+
+    this.find = function (req, res, next) {
+        json.promise(program.findById(req.params.id), res, next);
+    };
+
+    this.insert = function (req, res, next) {
+        json.promise(program.insert(req.body), res, next);
     };
 
 };
