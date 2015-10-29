@@ -15,7 +15,7 @@ module.exports = function (app) {
 
     this.insert = function (data) {
         return validator([ '_id', 'name' ], data).then(() => {
-            program.insert(data);
+            return program.insert(data);
         });
     };
 
