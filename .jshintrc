@@ -6,6 +6,7 @@
     "strict": true,
     "unused": true,
     "globals": {
-        "log": true
+        "log": true,
+        "q": true
     }
 }

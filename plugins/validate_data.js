@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (app) {
-    /* global q */ var Q = q;
+    var Q = q;
 
     return (variables, data) => {
         var unmetVariables = [];

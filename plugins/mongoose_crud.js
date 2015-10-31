@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function () {
-    /* global q */ var Q = q;
+    var Q = q;
 
     return function (schema) {
 
