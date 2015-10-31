@@ -7,5 +7,5 @@ booljs('com.gentebool.radio', [ 'booljs-mongoose' ])
     .setDatabaseLoader('booljs-mongoose')
     .run()
     .catch(function (err) {
-        /*global log*/log.error(err);
+        log.error(err);
     });
